@@ -40,10 +40,24 @@
       android:id="@+id/btn_log_in"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="@string/login"
+      android:text="@string/login1"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="@+id/edit_password"
       app:layout_constraintHorizontal_bias="0.5"
       app:layout_constraintStart_toStartOf="@+id/edit_password"
       app:layout_constraintTop_toBottomOf="@+id/edit_password" />
+
+  <Button
+      style="@style/Widget.AppCompat.Button.Borderless"
+      android:id="@+id/btn_newUser"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      android:fontFamily="sans-serif-medium"
+      android:text="@string/new_user_register"
+      android:textColor="@color/black"
+      android:textStyle="italic"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btn_log_in" />
 </androidx.constraintlayout.widget.ConstraintLayout>

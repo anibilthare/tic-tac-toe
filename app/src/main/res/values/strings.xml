@@ -24,4 +24,16 @@
   <string name="yes">Yes</string>
   <string name="cancel">Cancel</string>
   <string name="confirm">Confirm</string>
+  <string name="register">Register</string>
+  <string name="name">Name</string>
+  <string name="login1">Login</string>
+  <string name="new_user_register">new user? Register</string>
+  <string name="existing_user_login">Existing User? Login</string>
+  <string name="congratulations">Congratulations, You won the game!</string>
+  <string name="won">WINNER</string>
+  <string name="ok">ok</string>
+  <string name="loose">LOOSER</string>
+  <string name="you_lost">You Lost, better luck next time</string>
+  <string name="draw">DRAW</string>
+  <string name="you_drew">You drew, good game!</string>
 </resources>

@@ -13,6 +13,9 @@
     <action
         android:id="@+id/action_login_successful"
         app:destination="@id/dashboardFragment" />
+    <action
+        android:id="@+id/action_loginFragment_to_registerFragment"
+        app:destination="@id/registerFragment" />
   </fragment>
   <fragment
       android:id="@+id/gameFragment"
@@ -21,7 +24,15 @@
       tools:layout="@layout/fragment_game">
     <argument
         android:name="gameType"
-        app:argType="string" />
+        app:argType="string"
+        />
+    <argument
+        android:name="gameName"
+        app:argType="string"
+        />
+    <action
+        android:id="@+id/action_gameFragment_to_loginFragment"
+        app:destination="@id/loginFragment" />
   </fragment>
   <fragment
       android:id="@+id/dashboardFragment"
@@ -34,5 +45,16 @@
     <action
         android:id="@+id/action_game"
         app:destination="@id/gameFragment" />
+  </fragment>
+  <fragment
+      android:id="@+id/registerFragment"
+      android:name="androidsamples.java.tictactoe.RegisterFragment"
+      android:label="RegisterFragment" >
+    <action
+        android:id="@+id/action_registerFragment_to_dashboardFragment"
+        app:destination="@id/dashboardFragment" />
+    <action
+        android:id="@+id/action_registerFragment_to_loginFragment"
+        app:destination="@id/loginFragment" />
   </fragment>
 </navigation>
