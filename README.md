@@ -11,16 +11,16 @@ This app is a Tic Tac Toe game app.
 
 >Tic-tac-toe (American English), noughts and crosses (Commonwealth English), or Xs and Os, is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
 
-The app has a Firebase based User Authentication system. Once Registered/Login, the app shows the User Dashboard and user can start a new game. There are 2 game modes :
-1) Single Player Mode
-2) Multiplayer Mode (1v1)
+The app has uses Firebase-User Authentication system. Once Registered/Login, the app shows the User Dashboard and user can start a new game. There are 2 game modes :
+1) Single Player Mode(against computer player)
+2) Multiplayer Mode (1vs1)
 
-The app uses firebase realtime database to achieve multiplayer functionalities.
+The app uses firebase realtime database for multiplayer gameplay.
 
 #### Known Bugs 
-1) The app is not enabled for Landscape mode. In future iterations will add view models and make the required changes
-2) First Tap Bug - In Multiplayer mode, for the second player to get the first players move initially, he needs to press a random tile (High priority - to fix)
-3) Listeners not deactivated causing issue in multiplayer mode for the loosing player. (High Priority - to fix)
+1) Landscape mode has not been implemented.
+2) First Tap Bug - In Multiplayer mode, for the second player to get the first players move initially, he needs to press a random tile 😕
+3) Listeners have not been deactivated causing the issue in multiplayer mode.
 
 
 
@@ -60,8 +60,7 @@ On Press :
 4) If not, the game continues.
 
 ### Task 3  - Multi Player
-I have created a OpenGames class whose object is stored in the realtime database. This object contains grid values, player turn, game status and player informations.  By refering to [Firebase realtime database documentation](https://firebase.google.com/docs/database/android/read-and-write?hl=ca-AD&skip_cache=false) , I was able to set up appropritate listeners and setters for the realtime database. My database features two main branches, one for player stats and other for available games. The available games are used for the 
-
+I have created a OpenGames class whose object is stored in the realtime database. This object contains grid values, player turn, game status and player informations.  By refering to [Firebase realtime database documentation](https://firebase.google.com/docs/database/android/read-and-write?hl=ca-AD&skip_cache=false) , I was able to set up appropritate listeners and setters for the realtime database. My database features two main branches, one for player stats and other for available games. 
 
 
 ## Hosting and Running
