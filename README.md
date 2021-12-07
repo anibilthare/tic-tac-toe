@@ -68,7 +68,7 @@ The app runs completely on my firebase project. Both the Authentication and Real
 
 
 ## Testing
-
+Testing was done using Monkey tool and custom play by installing the app in multiple devices, the approach I used is TDD.
 ## Ratings
 Time take to complete this assignment : ~60 hours <br />
 Rating in terms of difficulty: 10/10
