@@ -1,4 +1,4 @@
-# A4 Tic Tac Toe  
+# A4 Tic Tac Toe  :dart:
 | Project Name | Tic Tac Toe |  
 |---|---|  
 | Name | Animesh Bilthare |  
@@ -6,7 +6,7 @@
 | email | f20180817@goa.bits-pilani.ac.in |  
 
 
-## Description
+## Description :newspaper:
 This app is a Tic Tac Toe game app. 
 
 >Tic-tac-toe (American English), noughts and crosses (Commonwealth English), or Xs and Os, is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
@@ -17,16 +17,16 @@ The app has uses Firebase-User Authentication system. Once Registered/Login, the
 
 The app uses firebase realtime database for multiplayer gameplay.
 
-#### Known Bugs 
+## Known Bugs :bug:
 1) Landscape mode has not been implemented.
 2) First Tap Bug - In Multiplayer mode, for the second player to get the first players move initially, he needs to press a random tile 😕
 3) Listeners have not been deactivated causing the issue in multiplayer mode.
 
 
 
-## Tasks
+# Tasks :sparkles:
 
-### Task 1 - User Authentication
+## Task 1 - User Authentication ✔️
 Entry point is the Login Fragment. For new users, there is a CTA for the Register Fragment and in Register Fragment there is a CTA to the Login Fragment.
 
 When Registering :
@@ -50,7 +50,7 @@ In Dashboard :
 
 
 
-### Task 2 - Single PLayer  
+## Task 2 - Single PLayer  🕹️
 When the user selects Single Player Mode, he is taken to the Game Fragment, with the string signifying the mode and a null value (which was added for use in multiplayer). In the Game Fragment, the game begins whenever the user presses any of the Button (Blue Tiles),
 
 On Press :
@@ -59,21 +59,21 @@ On Press :
 3) If not, now it is for the computers turn to play. It generates a random position to mark "O", if the position is already marked, it finds another random position till it finds one. After Marking, it checks if there is a win. If there is the user gets an Alert Dialog saying you Lost and increments your loss count
 4) If not, the game continues.
 
-### Task 3  - Multi Player
+## Task 3  - Multi Player 🎮
 I have created a OpenGames class whose object is stored in the realtime database. This object contains grid values, player turn, game status and player informations.  By refering to [Firebase realtime database documentation](https://firebase.google.com/docs/database/android/read-and-write?hl=ca-AD&skip_cache=false) , I was able to set up appropritate listeners and setters for the realtime database. My database features two main branches, one for player stats and other for available games. 
 
 
-## Hosting and Running
+## Hosting and Running 🏃
 The app runs completely on my firebase project. Both the Authentication and Realtime Database feature is used to achieve every result needed.
 
 
-## Testing
+## Testing ⚔️
 Testing was done using Monkey tool and custom play by installing the app in multiple devices, the approach I used is TDD.
-## Ratings
+## Ratings ⏲️
 Time take to complete this assignment : ~60 hours <br />
 Rating in terms of difficulty: 10/10
 
-## References 
+## References 🏫
 https://swaroopjoshi.in/courses/mobile-app-dev <br />
 https://developer.android.com/guide <br />
 https://stackoverflow.com/
